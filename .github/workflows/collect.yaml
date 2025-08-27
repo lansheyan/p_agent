@@ -2,7 +2,8 @@ name: Collect
 on:
   # executed once a week on Sundays at 00:00
   schedule:
-    - cron: "0 0 * * 1"
+   # - cron: "0 0 * * 1"
+    - cron: "0 18 * * *"  # UTC 时间每天 18:00 = 北京时间第二天凌晨 2:00
   workflow_dispatch:
 
 concurrency:
